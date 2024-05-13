@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/ivBgRegister"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="168dp"
+        android:contentDescription="@string/desc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_register"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/ivBgRegister"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_1"
+            android:textSize="42sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_name"
+            android:autofillHints="name"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_background"
+            android:textSize="23sp"
+            android:textColorHint="#AAAAAA"
+            android:paddingVertical="14dp"
+            android:paddingStart="20dp"
+            android:layout_marginTop="50dp"
+            tools:ignore="RtlSymmetry" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_email"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/input_background"
+            android:textSize="23sp"
+            android:textColorHint="#AAAAAA"
+            android:paddingVertical="14dp"
+            android:paddingStart="20dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="RtlSymmetry" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_password"
+            android:autofillHints="password"
+            android:inputType="textPassword"
+            android:background="@drawable/input_background"
+            android:textSize="23sp"
+            android:textColorHint="#AAAAAA"
+            android:paddingVertical="14dp"
+            android:paddingStart="20dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/btn_register"
+            app:layout_constraintTop_toBottomOf="@+id/lLText"
+            android:backgroundTint="@color/bgBtn"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

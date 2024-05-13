@@ -1,0 +1,13 @@
+<resources>
+    <style name="Base.Theme.HealtyCare" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme.HealtyCare" parent="Base.Theme.HealtyCare" />
+
+    <style name="Theme.App.HealtyCare" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/bgPrimary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_splash_screen</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.HealtyCare</item>
+    </style>
+</resources>
